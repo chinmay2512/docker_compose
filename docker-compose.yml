@@ -1,0 +1,18 @@
+ version:  "2.25.0"
+
+ services: 
+  frontendimg:
+    build: /root/Studentapp-3tier-DockerImage/frontend
+    container_name : frontend
+    ports: 
+       - 80:80
+    network_mode: bridge
+
+  backendimg:  
+    build: /root/Studentapp-3tier-DockerImage/Backend
+    container_name: backend
+    ports: 
+       - 8080:8080
+    network_mode: bridge
+    depends_on :
+      - "frontendimg"
