@@ -2,14 +2,14 @@
 
  services: 
   frontendimg:
-    build: /root/Studentapp-3tier-DockerImage/Frontend
+    build: /root/docker_compose/Frontend
     container_name : frontend
     ports: 
        - 80:80
     network_mode: bridge
 
   backendimg:  
-    build: /root/Studentapp-3tier-DockerImage/Backend
+    build: /root/docker_compose/Backend
     container_name: backend
     ports: 
        - 8080:8080
