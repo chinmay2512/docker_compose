@@ -2,7 +2,7 @@
 
  services: 
   frontendimg:
-    build: /root/Studentapp-3tier-DockerImage/frontend
+    build: /root/Studentapp-3tier-DockerImage/Frontend
     container_name : frontend
     ports: 
        - 80:80
