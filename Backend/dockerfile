@@ -1,6 +1,6 @@
 FROM centos:7
 LABEL app="Student-App"
-LABEL Developer="Nirmal Omkar"
+LABEL Developer="Chinmay"
 USER root
 WORKDIR /opt/
 
